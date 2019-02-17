@@ -24,4 +24,10 @@ class Springboot2Junit5ExampleApplicationTests {
 		assertEquals("Hello World", message);
 	}
 
+        @Test
+	@DisplayName("test Message REST API ")
+	void testMessage1() {
+		String message = this.restTemplate.getForObject("/hello", String.class);
+		assertEquals("Hello World", message);
+	}
 }
