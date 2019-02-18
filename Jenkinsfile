@@ -23,7 +23,14 @@ tools {
 		      echo '##############Build the the code -completed###########'
 		     }
 			 }
-		 
+	
+ stage('Build_Install') {
+		steps {
+		       echo '##############Build_Install the the code -Started###########'
+			   bat('mvn install')
+		      echo '##############Build_Install the the code -completed###########'
+		     }
+			 }	
 		 
   }
 
