@@ -15,7 +15,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 class Springboot2Junit5ExampleApplicationTests {
 
 	@Autowired
-	private TestRestTemplate restTemplate;
+	private TestRestTemplate  restTemplate;
 
 	@Test
 	@DisplayName("test Message REST API ")
